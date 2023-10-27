@@ -22,10 +22,41 @@ namespace PizzaAPI.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("PizzaAPI.Clerk", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("OrderCount")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("type")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Clerks");
+                });
+
             modelBuilder.Entity("PizzaAPI.Customer", b =>
                 {
                     b.Property<string>("Telephone")
                         .HasColumnType("text");
+
+                    b.Property<int>("AccountsReceivable")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -50,34 +81,32 @@ namespace PizzaAPI.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("PizzaAPI.Drink", b =>
+            modelBuilder.Entity("PizzaAPI.DeliveryMan", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Firstname")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Order")
+                    b.Property<int>("OrderCount")
                         .HasColumnType("integer");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Type")
+                    b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.Property<string>("type")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.ToTable("Drinks");
+                    b.HasKey("ID");
+
+                    b.ToTable("Deliverers");
                 });
 
             modelBuilder.Entity("PizzaAPI.Order", b =>
@@ -88,8 +117,9 @@ namespace PizzaAPI.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("OrderNumber"));
 
-                    b.Property<int>("Customer")
-                        .HasColumnType("integer");
+                    b.Property<string>("Customer")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
@@ -111,44 +141,6 @@ namespace PizzaAPI.Migrations
                     b.HasKey("OrderNumber");
 
                     b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("PizzaAPI.Pizza", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("Order")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Price")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Size")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Pizzas");
                 });
 #pragma warning restore 612, 618
         }
