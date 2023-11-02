@@ -1,13 +1,5 @@
 <!-- src/components/NavBar.vue -->
 <template>
-<!--  <nav class="navbar-container">
-    <router-link to="/">Accueil</router-link>
-    <router-link to="/commande">Client</router-link>
-    <router-link to="/cuisine">Cuisine</router-link>
-    <router-link to="/livreur">Livreur</router-link>
-    <router-link to="/se-connecter">Se Connecter</router-link>
-    <router-link to="/suivrecommande">Suivre sa commande</router-link>
-  </nav>-->
   <header class="bg-white">
     <div
         class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
@@ -49,7 +41,7 @@
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
-                class="block rounded-md bg-gray-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-800"
+                class="block rounded-md bg-gray-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-900"
                 href="/login"
             >
               Login
@@ -87,79 +79,3 @@ export default {
 };
 </script>
 
-<style scoped>
-/*.navbar {
-  position: fixed;
-}
-!* Style de la barre de navigation *!
-.navbar-container {
-  width: 100%; !* La barre de navigation occupera 100% de la largeur de la page *!
-  max-width: 1200px; !* Limite la largeur maximale de la barre de navigation *!
-  margin: 0 auto; !* Centre la barre de navigation horizontalement *!
-  background-color: #e6e6e5; !* Fond gris clair *!
-  border: 1px solid #77B5FE; !* Bordure de la barre de navigation *!
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); !* Ombre légère sous la barre de navigation *!
-  border-radius: 10px; !* Coins arrondis *!
-  margin: 30px 15%; !* Marge en haut et en bas de la barre de navigation *!
-  display: flex;
-
-  justify-content: space-between; !* Pour espacer les éléments horizontalement *!
-  align-items: center; !* Pour centrer verticalement les éléments *!
-  position: fixed;
-}
-
-!* Style des liens dans la barre de navigation *!
-.navbar-container a {
-  text-decoration: none; !* Supprime les soulignements des liens *!
-  color: #333; !* Couleur du texte des liens *!
-  font-weight: bold;
-  padding: 10px; !* Ajout d'un espace autour du texte du lien *!
-  margin-right: 20px; !* Marge à droite entre les liens *!
-  position: relative; !* Ajout d'une position relative *!
-
-  !* Barre jaune au-dessus du lien au survol *!
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px; !* Hauteur de la barre jaune *!
-    background-color: #333; !* Couleur de la barre jaune *!
-    top: -5px; !* Position de la barre jaune au-dessus du lien *!
-    left: 0;
-    transform: scaleX(0); !* Initialement, la barre est invisible *!
-    transform-origin: left;
-    transition: transform 0.3s ease; !* Animation de la barre jaune *!
-  }
-
-  !* Barre jaune en dessous du lien au survol *!
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px; !* Hauteur de la barre jaune *!
-    background-color: #333; !* Couleur de la barre jaune *!
-    bottom: -5px; !* Position de la barre jaune en dessous du lien *!
-    left: 0;
-    transform: scaleX(0); !* Initialement, la barre est invisible *!
-    transform-origin: left;
-    transition: transform 0.3s ease; !* Animation de la barre jaune *!
-  }
-
-  !* Effet au survol *!
-  &:hover::before,
-  &:hover::after {
-    transform: scaleX(1); !* Affiche la barre jaune au survol *!
-  }
-}
-
-!* Style du premier et dernier lien *!
-.navbar-container a:first-child {
-  padding-left: 20px; !* Ajout de padding à gauche du premier lien *!
-
-}
-
-.navbar-container a:last-child {
-  padding-right: 20px; !* Ajout de padding à droite du dernier lien *!
-
-}*/
-</style>

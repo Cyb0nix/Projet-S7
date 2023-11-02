@@ -1,148 +1,222 @@
 <template>
-  <div class="home-container">
-    <div class="content">
-      <div class="left-content">
-        <h1>Bienvenue chez DelicePizza</h1>
-        <p>Découvrez nos délicieuses pizzas artisanales.</p>
-        <p>Tel : 07 82 35 28 44</p>
-        <p>Ouvert 7j/7, 11h-23h</p>
-      </div>
-      <img src="@/assets/pizza4.jpg" alt="Image d'accueil" class="home-image">
-      <div class="right-content">
-        <div class="social-icon">
-          <a href="https://www.facebook.com" class="icon"><img src="@/assets/facebook.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com" class="icon"><img src="@/assets/instagram.png" alt="Instagram"></a>
-          <a href="https://twitter.com" class="icon"><img src="@/assets/twitter.png" alt="Twitter"></a>
-        </div>
-      </div>
-    </div>
 
-    <br>
+    <section
+        class="relative bg-[url(https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+          class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/80 sm:to-white/10 sm:bg-gradient-to-r"
+      ></div>
 
-    <div class="section">
-      <h1>Nos Pizzas</h1>
-      <div class="pizza-grid">
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/marguerita.png" alt="Nom de la pizza">
-              <h2>Margerita</h2>
-              <p>Tomate, mozzarella, olives, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/napolitaine.png" alt="Nom de la pizza">
-              <h2>Napolitaine</h2>
-              <p>Tomate, mozzarella, anchois, câpres, olives, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/reine.png" alt="Nom de la pizza">
-              <h2>Reine</h2>
-              <p>Tomate, mozzarella, délice de dinde, champignons, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/vegeratienne.png" alt="Nom de la pizza">
-              <h2>Végétarienne</h2>
-              <p>Tomate, mozzarella, tomates fraîches, poivrons, oignons, champignons, olives, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/4fromages.png" alt="Nom de la pizza">
-              <h2>4 Fromages</h2>
-              <p>Tomate, mozzarella, brie, gorgonzola, parmesan, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/orientale.png" alt="Nom de la pizza">
-              <h2>Oriantale</h2>
-              <p>Tomate, mozzarella, merguez, oignons, poivrons, champignons, oeuf, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/mexicaine.png" alt="Nom de la pizza">
-              <h2>Mexicaine</h2>
-              <p>Tomate, mozzarella, délice de dinde, viande hachée, oeuf, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/campione.png" alt="Nom de la pizza">
-              <h2>Campione</h2>
-              <p>Tomate, mozzarella, viande hachée, champignons, oeuf, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/deluxe.png" alt="Nom de la pizza">
-              <h2>Deluxe</h2>
-              <p>Tomate, mozzarella, chorizo de boeuf, oignons, viande hachée, champignons, poivrons, origan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pizza-box">
-          <div class="pizza">
-            <div class="pizza-info">
-              <img src="../assets/Pizzas/texmex.png" alt="Nom de la pizza">
-              <h2>Tex Mex</h2>
-              <p>Tomate, mozzarella, oignons, merguez, viande hachée, piments verts, origan.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <div
+          class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+      >
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <h1 class="text-3xl font-extrabold sm:text-5xl">
+            Bienvenue chez
 
-    <br>
+            <strong class="block font-extrabold text-rose-700">
+              PizzaDelice
+            </strong>
+          </h1>
 
-    <section class="section">
-      <h2>Nos Boissons</h2>
-      <div class="drink-grid">
-        <div class="drink-box">
-          <div class="drink">
-            <p>Ice Tea</p>
-          </div>
-        </div>
-        <div class="drink-box">
-          <div class="drink">
-            <p>Coca Cola</p>
-          </div>
-        </div>
-        <div class="drink-box">
-          <div class="drink">
-            <p>Sprite</p>
-          </div>
-        </div>
-        <div class="drink-box">
-          <div class="drink">
-            <p>Fanta</p>
-          </div>
+          <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+            Découvrez nos délicieuses pizzas artisanales.
+            <br>
+            Tel : 07 82 35 28 44
+            <br>
+            Ouvert 7j/7, 11h-23h
+          </p>
         </div>
       </div>
     </section>
-  </div>
+
+    <br>
+
+  <section>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+      <header class="text-center">
+        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
+          Nos Pizzas
+        </h2>
+
+        <p class="max-w-md mx-auto mt-4 text-gray-500">
+          Une sélection de nos meilleures pizzas, cuite au feu de bois, pâte maison.
+        </p>
+      </header>
+
+      <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-4">
+        <li>
+          <a href="#" class="block overflow-hidden group">
+            <img
+                src="../assets/Pizzas/marguerita.png"
+                alt=""
+                class="h-[350px] w-full transition duration-500 group-hover:scale-105 sm:h-[300px]"
+            />
+
+            <div class="relative pt-3 bg-white">
+              <h3
+                  class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+              >
+                Margarita
+              </h3>
+
+              <p class="mt-2">
+                <span class="tracking-wider text-gray-900"> Tomate, mozzarella, olives, origan.</span>
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block overflow-hidden group">
+            <img
+                src="../assets/Pizzas/napolitaine.png"
+                alt=""
+                class="h-[350px] w-full transition duration-500 group-hover:scale-105 sm:h-[300px]"
+            />
+
+            <div class="relative pt-3 bg-white">
+              <h3
+                  class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+              >
+                Napolitaine
+              </h3>
+
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+
+                <span class="tracking-wider text-gray-900">Tomate, mozzarella, anchois, câpres, olives, origan.</span>
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block overflow-hidden group">
+            <img
+                src="../assets/Pizzas/reine.png"
+                alt=""
+                class="h-[350px] w-full transition duration-500 group-hover:scale-105 sm:h-[300px]"
+            />
+
+            <div class="relative pt-3 bg-white">
+              <h3
+                  class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+              >
+                Reine
+              </h3>
+
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+
+                <span class="tracking-wider text-gray-900"> Tomate, mozzarella, délice de dinde, champignons, origan. </span>
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block overflow-hidden group">
+            <img
+                src="../assets/Pizzas/4fromages.png"
+                alt=""
+                class="h-[350px] w-full transition duration-500 group-hover:scale-105 sm:h-[300px]"
+            />
+
+            <div class="relative pt-3 bg-white">
+              <h3
+                  class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+              >
+                4 Fromages
+              </h3>
+
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+
+                <span class="tracking-wider text-gray-900"> Tomate, mozzarella, brie, gorgonzola, parmesan, origan. </span>
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+    <br>
+
+  <section>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+      <header class="text-center">
+        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
+          Nos Boissons
+        </h2>
+
+        <p class="max-w-md mx-auto mt-4 text-gray-500">
+          Une séléction de nos meilleures boissons.
+        </p>
+      </header>
+
+      <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-4">
+        <li>
+          <a href="#" class="block overflow-hidden group">
+
+            <div class="relative pt-3 bg-white">
+              <p class="mt-2">
+                <span class="tracking-wider text-gray-900">Coca-Cola</span>
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block overflow-hidden group">
+            <div class="relative pt-3 bg-white">
+
+              <p class="mt-2">
+
+
+                <span class="tracking-wider text-gray-900">Fanta</span>
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block overflow-hidden group">
+
+            <div class="relative pt-3 bg-white">
+
+              <p class="mt-2">
+                <span class="sr-only"> Regular Price </span>
+
+                <span class="tracking-wider text-gray-900"> Sprit</span>
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block overflow-hidden group">
+
+            <div class="relative pt-3 bg-white">
+
+              <p class="mt-2">
+
+                <span class="text-center tracking-wider text-gray-900">Ice Tea</span>
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-16 border-t border-gray-100 pt-8">
+      <p class="text-center text-xs/relaxed text-gray-500">
+        © DelicePizza 2023. All rights reserved.
+
+        <br />
+      </p>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -152,53 +226,6 @@ export default {
 </script>
 
 <style scoped>
-/* Style de la page d'accueil */
-.home-container {
-  width: 100%;
-  background-color: #fff; /* Arrière-plan blanc */
-  display: flex;
-  flex-direction: column; /* Disposition en colonne */
-  align-items: center;
-  justify-content: center; /* Centrage vertical et horizontal */
-}
-
-/* Style de la section d'accueil */
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  max-width: 1200px;
-  padding: 20px;
-  flex: 1; /* Pour occuper l'espace vertical disponible */
-}
-
-.left-content {
-  color: #000; /* Texte en noir */
-  flex: 1;
-  margin-left: 10;
-  border: 1px solid #ccc; /* Bordure pour séparer les sections */
-  border-radius: 10px; /* Coins arrondis */
-  padding-left:15px;
-}
-
-.home-image {
-  width: 70%;
-  max-width: 800px;
-  flex: 1;
-  margin: 20px;
-}
-
-.right-content img{
-  display: flex;
-  flex-direction: column; /* Aligner les icônes en colonne */
-  align-items: flex-end;
-  flex: 1;
-  margin-right: 0;
-  width: 30px; /* Largeur de l'icône */
-  height: auto; /* Hauteur de l'icône */
-}
-
 
 /* Style des sections */
 .section {
@@ -222,13 +249,7 @@ export default {
   font-size: 1.5rem;
   color: #856d4d;
 }
-@font-face {
-  font-family: 'Blackscript';
-  src: url('@/assets/police/blackscript.ttf') format('truetype');
-}
-h1{
-  font-family: 'Blackscript';
-}
+
 
 /* Style de la grille de pizzas et boissons */
 .pizza-grid,
