@@ -31,8 +31,14 @@
             </li>
 
             <li>
-              <router-link to="suivrecommande" class="text-gray-500 transition hover:text-gray-500/75" >
+              <router-link to="/suivrecommande" class="text-gray-500 transition hover:text-gray-500/75" >
                 Suivre sa commande
+              </router-link>
+            </li>
+
+            <li>
+              <router-link to="/cuisine" class="text-gray-500 transition hover:text-gray-500/75" >
+                Cuisine
               </router-link>
             </li>
           </ul>
