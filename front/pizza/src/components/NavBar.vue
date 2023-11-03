@@ -30,7 +30,7 @@
               </router-link>
             </li>
 
-            <li>
+<!--            <li>
               <router-link to="/suivrecommande" class="text-gray-500 transition hover:text-gray-500/75" >
                 Suivre sa commande
               </router-link>
@@ -40,19 +40,19 @@
               <router-link to="/cuisine" class="text-gray-500 transition hover:text-gray-500/75" >
                 Cuisine
               </router-link>
-            </li>
+            </li>-->
           </ul>
         </nav>
 
         <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
+<!--          <div class="sm:flex sm:gap-4">
             <a
                 class="block rounded-md bg-gray-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-900"
                 href="/login"
             >
               Login
             </a>
-          </div>
+          </div>-->
 
           <button
               class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"

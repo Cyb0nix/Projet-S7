@@ -79,7 +79,7 @@
         this.newOrder.customerName = this.user.surname;
         this.newOrder.pizzas.push(this.pizza);
         this.newOrder.drinks.push(this.drink);
-        this.newOrder.status = "waiting";
+        this.newOrder.status = "Pending";
 
         try {
           const response = await fetch("http://localhost:5165/api/Order?clerkId="+1, {
