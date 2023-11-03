@@ -209,13 +209,6 @@
         </li>
       </ul>
     </div>
-    <div class="mt-16 border-t border-gray-100 pt-8">
-      <p class="text-center text-xs/relaxed text-gray-500">
-        © DelicePizza 2023. All rights reserved.
-
-        <br />
-      </p>
-    </div>
   </section>
 </template>
 
@@ -227,76 +220,5 @@ export default {
 
 <style scoped>
 
-/* Style des sections */
-.section {
-  margin: 20px 0;
-  width: 80%;
-  max-width: 1200px;
-  padding: 20px;
-  border: 1px solid #ccc; /* Bordure pour séparer les sections */
-  border-radius: 10px; /* Coins arrondis */
-  flex: 1; /* Pour occuper l'espace vertical disponible */
-  display: flex;
-  flex-direction: column; /* Disposition en colonne */
-  background-color: #272827;
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  font-family: 'Blackscript';
-}
-.section h1 {
-  font-size: 1.5rem;
-  color: #856d4d;
-}
-
-
-/* Style de la grille de pizzas et boissons */
-.pizza-grid,
-.drink-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
-  gap: 20px; /* Espace entre les boîtes */
-}
-
-/* Style des boîtes de pizzas et boissons */
-.pizza-box,
-.drink-box {
-  border: 1px solid #000; /* Bordure de la boîte */
-  border-radius: 10px; /* Coins arrondis */
-  padding: 10px; /* Espace à l'intérieur de la boîte */
-  display: flex; /* Utilisation de flexbox pour aligner les éléments */
-  align-items: center; /* Aligner verticalement au centre */
-  background-color: #856d4d;
-}
-
-.pizza img {
-  max-width: 300px; /* Ajustez la largeur maximale de l'image selon vos besoins */
-  margin-right: 10px; /* Espace à droite de l'image */
-  border-radius: 5%;
-}
-
-.pizza-info {
-  flex: 1; /* Utilisez tout l'espace disponible à droite de l'image */
-  display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
-  align-items: center; /* Aligner verticalement au centre */
-  justify-content: space-between;
-}
-
-/* Style du titre de la pizza et de la description */
-.pizza-info h2,
-.pizza-info p {
-  margin: 10px;
-}
-
-.pizza-info p {
-  flex-direction: column; /* Aligner les icônes en colonne */
-  align-items: flex-end;
-}
-
-/* Style des éléments de boisson */
-.drink {
-  text-align: center;
-}
 </style>
 

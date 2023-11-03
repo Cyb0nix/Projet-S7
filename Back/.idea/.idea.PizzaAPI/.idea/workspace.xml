@@ -10,7 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093a4c85-5ea0-49ef-8a88-0d18633128b5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/dataSources/666ec1f2-73f2-474b-b4de-b75de8b330c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/dataSources/666ec1f2-73f2-474b-b4de-b75de8b330c2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/P_Commande.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/views/ClientsView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -173,6 +178,7 @@
       <workItem from="1698353968421" duration="541000" />
       <workItem from="1698363191518" duration="2760000" />
       <workItem from="1698392720288" duration="18404000" />
+      <workItem from="1698957412400" duration="2009000" />
     </task>
     <task id="LOCAL-00001" summary="back">
       <option name="closed" value="true" />

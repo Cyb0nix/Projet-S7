@@ -19,14 +19,14 @@
             </li>
 
             <li>
-              <router-link to="/commande" class="text-gray-500 transition hover:text-gray-500/75" >
+              <router-link to="/clients" class="text-gray-500 transition hover:text-gray-500/75" >
                 Client
               </router-link>
             </li>
 
             <li>
-              <router-link to="/livreur" class="text-gray-500 transition hover:text-gray-500/75" >
-                Livreur
+              <router-link to="/commandes" class="text-gray-500 transition hover:text-gray-500/75" >
+                Commandes
               </router-link>
             </li>
 

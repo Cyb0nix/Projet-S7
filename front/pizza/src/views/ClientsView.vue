@@ -104,7 +104,7 @@
                 <td class="py-3 px-4 text-sm font-normal text-gray-700 ">{{client.address}}</td>
 
                 <td class="py-3 px-4 text-sm font-medium text-right rtl:text-left">
-                  <button class="flex items-center text-blue-500 hover:underline focus:outline-none">
+                  <button class="flex items-center text-blue-500 hover:underline focus:outline-none" @click="addOrder(client)">
                   <span>Ajouter une commande</span>
                   </button>
                 </td>
@@ -121,6 +121,7 @@
 </template>
 
 <script>
+
 export default {
   name: "GestionClients",
   data() {
@@ -166,7 +167,11 @@ export default {
       this.clients = await response.json();
 
     },
+    async addOrder(client) {
+      this.$router.push({name: "createorder", params: {user: client.telephone}})
+    }
   },
+
   mounted() {
     this.getClient();
   },
