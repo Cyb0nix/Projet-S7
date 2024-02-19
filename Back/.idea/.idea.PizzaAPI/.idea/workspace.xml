@@ -10,19 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093a4c85-5ea0-49ef-8a88-0d18633128b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Customer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Drink.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Items.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Pizza.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PizzaAPI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PizzaAPI.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/dbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/dataSources/666ec1f2-73f2-474b-b4de-b75de8b330c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/dataSources/666ec1f2-73f2-474b-b4de-b75de8b330c2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/P_Commande.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/views/ClientsView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +26,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/CustomerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/PizzaController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Clerk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Items.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/CustomerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/MessageBrokerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/OrderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/utils/dbContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -45,31 +46,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\cedri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\cedri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\cedri\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\cedri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\cedri\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\cedri\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PizzaAPI: http">
     <configuration name="PizzaAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/PizzaAPI.csproj" />
@@ -160,8 +163,32 @@
       <workItem from="1697996929967" duration="83000" />
       <workItem from="1697997230188" duration="3871000" />
       <workItem from="1698060521805" duration="4982000" />
-      <workItem from="1698066888024" duration="15221000" />
+      <workItem from="1698066888024" duration="21367000" />
+      <workItem from="1698182002651" duration="797000" />
+      <workItem from="1698224872843" duration="5546000" />
+      <workItem from="1698230485589" duration="1067000" />
+      <workItem from="1698231773728" duration="49000" />
+      <workItem from="1698231853405" duration="83000" />
+      <workItem from="1698310368912" duration="43000" />
+      <workItem from="1698310589564" duration="1343000" />
+      <workItem from="1698326278695" duration="1906000" />
+      <workItem from="1698328346058" duration="441000" />
+      <workItem from="1698328841228" duration="6270000" />
+      <workItem from="1698336294148" duration="6245000" />
+      <workItem from="1698353968421" duration="541000" />
+      <workItem from="1698363191518" duration="2760000" />
+      <workItem from="1698392720288" duration="18404000" />
+      <workItem from="1698957412400" duration="2009000" />
     </task>
+    <task id="LOCAL-00001" summary="back">
+      <option name="closed" value="true" />
+      <created>1698409068998</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698409068998</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,5 +197,11 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="back" />
+    <option name="LAST_COMMIT_MESSAGE" value="back" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

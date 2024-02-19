@@ -3,12 +3,8 @@ using System.Runtime.InteropServices.JavaScript;
 
 namespace PizzaAPI;
 
-public class Customer
+public class Customer : Workforce
 {
-    public string Surname { get; set; }
-    
-    public string Firstname { get; set; }
-    
     public string Address { get; set; }
     
     [Key]
@@ -17,7 +13,8 @@ public class Customer
     public DateOnly FirstOrderDate { get; set; }
     
     public int OrderCount { get; set; }
-    
+    public int AccountsReceivable { get; set; }
+
     public Customer(string surname, string firstname, string address, string telephone)
     {
         this.Surname = surname;
@@ -26,6 +23,7 @@ public class Customer
         this.Telephone = telephone;
         FirstOrderDate = DateOnly.FromDateTime(DateTime.Now);
         OrderCount = 0;
+        AccountsReceivable = 0;
     }
     
 }

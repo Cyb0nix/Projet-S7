@@ -1,41 +1,76 @@
 using Microsoft.AspNetCore.Mvc;
 using PizzaAPI.utils;
 
+
 namespace PizzaAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 public class CustomerController : ControllerBase
 {
-    private dbContext _dbContext;
-
     private readonly ILogger<CustomerController> _logger;
+    private static dbContext _dbContext;
 
     public CustomerController(ILogger<CustomerController> logger, dbContext dbContext)
     {
         _logger = logger;
         _dbContext = dbContext;
     }
-    
-    
+
     [HttpGet("All")]
-    public IEnumerable<Customer> Get()
+    public IEnumerable<Customer> GetAllCustomer()
     {
         return _dbContext.Customers.ToList();
     }
     
     [HttpGet("{telephone}")]
-    public Customer Get(string telephone)
+    public Customer GetCustomer(string telephone)
     {
-        return _dbContext.Customers.Find(telephone);
+        Customer? customer;
+        try
+        {
+            customer = _dbContext.Customers.Find(telephone);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+
+        return customer;
     }
     
-    [HttpPost]
-    public void Post([FromBody] Customer customer)
+    
+    [HttpGet("byName")]
+    public IEnumerable<Customer> GetCustomerByName()
     {
-        _dbContext.Customers.Add(customer);
-        _dbContext.SaveChanges();
+        return _dbContext.Customers.OrderBy(c => c.Surname).ToList();
     }
+    
+
+    [HttpGet("best")]
+    public Customer GetBestCustomer()
+    {
+        return _dbContext.Customers.OrderByDescending(c => c.AccountsReceivable).First();
+    }
+    
+    
+    
+    [HttpPost] 
+    public void CreateCustomer([FromBody] Customer customer)
+    {
+        try
+        {
+            _dbContext.Customers.Add(customer);
+            _dbContext.SaveChanges();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
     
     
     

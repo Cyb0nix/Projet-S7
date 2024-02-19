@@ -13,7 +13,7 @@ public class dbContext : DbContext
 
     } 
     public virtual DbSet<Customer> Customers { get; set; }
-    public virtual DbSet<Drink> Drinks { get; set; }
-    public virtual DbSet<Pizza> Pizzas { get; set; }
     public virtual DbSet<Order> Orders { get; set; }
+    public virtual DbSet<Clerk> Clerks { get; set; }
+    public virtual DbSet<DeliveryMan> Deliverers { get; set; }
 }
