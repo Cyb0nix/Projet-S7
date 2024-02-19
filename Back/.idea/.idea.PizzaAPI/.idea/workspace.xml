@@ -10,12 +10,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093a4c85-5ea0-49ef-8a88-0d18633128b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/dataSources/666ec1f2-73f2-474b-b4de-b75de8b330c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/dataSources/666ec1f2-73f2-474b-b4de-b75de8b330c2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/default.nginx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PizzaAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PizzaAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/pizza/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/P_Commande.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pizza/src/views/ClientsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../front/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../front/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/jsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../front/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Marguerita.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Marguerita.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/4fromages.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/4fromages.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/campione.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/campione.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/deluxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/deluxe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/marguerita.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/marguerita.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/mexicaine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/mexicaine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/napolitaine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/napolitaine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/orientale.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/orientale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/reine.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/reine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/texmex.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/texmex.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/Pizzas/vegeratienne.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/Pizzas/vegeratienne.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/connexion.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/connexion.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/img_pizza.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/img_pizza.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/instagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/instagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/pizza2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/pizza2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/pizza3.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/pizza3.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/pizza4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/pizza4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/police/blackscript.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/police/blackscript.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/reine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/reine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/assets/twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/assets/twitter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/components/BasicFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/components/BasicFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/components/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/ClientsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/ClientsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/OrderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/OrderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/P_Cuisine.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/P_Cuisine.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/P_SeConnecter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/P_SeConnecter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/P_SuivreCommande.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/P_SuivreCommande.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/addUserView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/addUserView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/src/views/createOrderView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/views/createOrderView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pizza/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +123,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.PizzaAPI: http">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="PizzaAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/PizzaAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -119,17 +169,56 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Dockerfile build" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="mcr.microsoft.comdotnetsdk7.0_build" />
+          <option name="buildCliOptions" value="--target build" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile final" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="base_final" />
+          <option name="buildCliOptions" value="--target final" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile publish" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="build_publish" />
+          <option name="buildCliOptions" value="--target publish" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="pizzaapi" />
           <option name="containerName" value="pizzaapi" />
-          <option name="contextFolderPath" value="C:\Users\cedri\Documents\GitHub\PizzaAPI" />
+          <option name="contextFolderPath" value="../../PizzaAPI" />
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
                 <option name="containerPort" value="80" />
-                <option name="hostPort" value="8080" />
+                <option name="hostPort" value="5165" />
               </DockerPortBindingImpl>
             </list>
           </option>
@@ -146,6 +235,22 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.PizzaAPI: http" />
+      <item itemvalue=".NET Launch Settings Profile.PizzaAPI: https" />
+      <item itemvalue=".NET Launch Settings Profile.PizzaAPI: IIS Express" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.Dockerfile build" />
+      <item itemvalue="Docker.Dockerfile final" />
+      <item itemvalue="Docker.Dockerfile publish" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile final" />
+        <item itemvalue="Docker.Dockerfile publish" />
+        <item itemvalue="Docker.Dockerfile build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -179,6 +284,11 @@
       <workItem from="1698363191518" duration="2760000" />
       <workItem from="1698392720288" duration="18404000" />
       <workItem from="1698957412400" duration="2009000" />
+      <workItem from="1698999525674" duration="8959000" />
+      <workItem from="1699212182100" duration="67000" />
+      <workItem from="1700412595499" duration="1367000" />
+      <workItem from="1700421831641" duration="1561000" />
+      <workItem from="1700424319803" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="back">
       <option name="closed" value="true" />

@@ -15,8 +15,8 @@
       </thead>
       <tbody>
         <tr v-for="(commande, index) in commandes" :key="index">
-          <td>{{ commande.telephone }}</td>
-          <td>{{ commande.commande }}</td>
+          <td>{{ pizzas.type }}</td>
+          <td>{{ pizzas.size }}</td>
           <td>
             <button @click="changerEtat(commande)">
               {{ commande.etat }}
@@ -55,6 +55,7 @@ export default {
         commande: "",
         etat: "Attente",
       },
+      pizzas: [],
     };
   },
   methods: {
@@ -71,6 +72,11 @@ export default {
       } else if (commande.etat === "Préparation") {
         commande.etat = "Terminé";
       }
+    },
+
+   async getPizzas() {
+      const response = await fetch("http://localhost:5165//api/Pizza");
+      this.pizzas = await response.json();
     },
   },
 };

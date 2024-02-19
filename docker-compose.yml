@@ -1,0 +1,56 @@
+version: "3"
+
+services:
+
+  # Frontend Delice Pizza docker container
+  front-delice-pizza:
+    image: cybonix1/front-delice-pizza:latest # Image name
+    container_name: frontend-DelicePizza # Name of the container
+    ports:  # Port mapping
+      - "8080:8080"
+    restart: always  # Restart policy
+    networks: # Network connection for the container
+      - DelicePizza
+
+  # Backend Delice Pizza docker container
+  back-end-delice-pizza:
+    image: cybonix1/back-end-delice-pizza:latest # Image name
+    container_name: backend-DelicePizza # Name of the container
+    ports: # Port mapping
+      - "5165:80"
+    restart: always # Restart policy
+    networks: # Network connection
+      - DelicePizza
+
+  # Postgres Delice Pizza docker container
+  postgres-db-delice-pizza:
+    image: postgres:alpine3.18 # Image name
+    container_name: postgres-db-DelicePizza # Name of the container
+    restart: always # Restart policy
+    environment: # Environment variables
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: PostgreSQL15
+    ports: # Port mapping
+      - '5432:5432'
+    networks: # Network connection for the container
+      - DelicePizza
+    volumes: # Volume mapping for persistent data
+      - ./postgres-data:/var/lib/postgresql/data
+
+  # RabbitMQ Delice Pizza docker container
+  rabbitmq-delice-pizza:
+    image: rabbitmq:management # Image name
+    container_name: rabbitmq-DelicePizza # Name of the container
+    environment: # Environment variables
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports: # Port mapping
+      - "5672:5672"
+      - "15672:15672"
+    networks: # Network connection for the container
+        - DelicePizza
+
+networks: # Network connection for the containers
+    DelicePizza: # Network name
+        driver: bridge # Network driver
