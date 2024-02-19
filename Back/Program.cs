@@ -22,6 +22,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<dbContext>(option =>
     option.UseNpgsql(builder.Configuration.GetConnectionString("connection")));
 
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -33,6 +34,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+
+using(var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<dbContext>();
+    dbContext.Database.EnsureCreated();
 }
 
 app.UseHttpsRedirection();

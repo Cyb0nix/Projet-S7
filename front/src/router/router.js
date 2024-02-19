@@ -11,11 +11,11 @@ import createOrderView from '../views/createOrderView.vue';
 
 const routes = [
     { path: "/", component: P_Home },
-    { path: "/clients", component: P_Commande },
-    { path: "/cuisine", component: P_Cuisine },
-    { path: "/commandes", component: OrderView },
-    { path: "/login", component: P_SeConnecter },
-    { path: "/suivrecommande", component: P_SuivreCommande }, // Le nom doit être en minuscules
+    { path: "/clients", component: P_Commande, name: "clients" },
+    { path: "/cuisine", component: P_Cuisine, name: "cuisine" },
+    { path: "/commandes", component: OrderView, name: "commandes" },
+    { path: "/login", component: P_SeConnecter, name: "login" },
+    { path: "/suivrecommande", component: P_SuivreCommande, name: "suivrecommande"},
     { path: "/createaccount", component: addUserView, name: "createaccount"},
     {path: "/createorder/:user",name: "createorder" ,component: createOrderView}
 ];

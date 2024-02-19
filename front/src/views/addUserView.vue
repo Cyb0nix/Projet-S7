@@ -57,6 +57,7 @@ export default {
         },
         body: JSON.stringify(this.newClient),
       });
+      this.$router.push("/clients");
     },
   },
 };
